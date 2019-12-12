@@ -15,6 +15,9 @@ public class TsetController {
     @Value("${sms.ip}")
     private String ip;
 
+
+
+
     @RequestMapping(value = "/ip", method = RequestMethod.GET)
     public String ip() {
         return ip;
