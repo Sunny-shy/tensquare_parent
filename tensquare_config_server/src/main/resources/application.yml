@@ -1,0 +1,20 @@
+server:
+  port: 12000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+spring:
+  application:
+    name: tensquare-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/itruiwen/tensquare_1.git
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

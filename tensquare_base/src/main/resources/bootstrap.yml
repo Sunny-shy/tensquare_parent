@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka/
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: tensquare-config-server
+      name: base   #git仓库的应用名称
+      profile: dev     #git仓库的环境名称
+      label: master   #git仓库的分支名称
